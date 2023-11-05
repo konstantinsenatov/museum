@@ -1,0 +1,47 @@
+/* base */
+@import "base/var";
+@import "base/reset";
+@import "base/fonts";
+
+/* mixin */
+@import "base/mixin";
+
+/*libs*/
+@import "libs/select2.min";
+@import "libs/swiper-bundle.min";
+@import "libs/datepicker.min";
+@import "libs/fancybox";
+@import "libs/bvi.min";
+@import "libs/aos";
+
+
+/* main */
+@import "partials/main";
+
+/* components */
+@import "partials/header";
+@import "partials/footer";
+
+
+/*blocks*/
+@import "blocks/hero";
+@import "blocks/areas";
+@import "blocks/events";
+@import "blocks/collection";
+@import "blocks/mediacenter";
+@import "blocks/partners";
+@import "blocks/tags";
+
+
+/* pages */
+@import "pages/events-page";
+@import "pages/only-events";
+@import "pages/prices-page";
+@import "pages/history";
+@import "pages/about";
+@import "pages/mediacenter-page";
+@import "pages/search-page";
+@import "pages/plan-page";
+@import "pages/contacts-page";
+@import "pages/employees";
+@import "pages/anti-corruption";

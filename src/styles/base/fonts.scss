@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/Inter_Regular/Inter_Regular.eot');
+	src: local('Inter_Regular'), local('../fonts/Inter_Regular/Inter_Regular'),
+		url('../fonts/Inter_Regular/Inter_Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Inter_Regular/Inter_Regular.woff') format('woff'),
+		url('../fonts/Inter_Regular/Inter_Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Noto Serif Display';
+	src: url('../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.eot');
+	src: local('NotoSerifDisplay_Medium'), local('../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium'),
+		url('../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.woff') format('woff'),
+		url('../fonts/NotoSerifDisplay_Medium/NotoSerifDisplay_Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Noto Serif';
+	src: url('../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.eot');
+	src: local('NotoSerifDisplay_SemiCondensed_Regular'), local('../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular'),
+		url('../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.woff') format('woff'),
+		url('../fonts/NotoSerifDisplay_SemiCondensed_Regular/NotoSerifDisplay_SemiCondensed_Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu_Bold/Ubuntu_Bold.eot');
+	src: local('Ubuntu_Bold'), local('../fonts/Ubuntu_Bold/Ubuntu_Bold'),
+		url('../fonts/Ubuntu_Bold/Ubuntu_Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Ubuntu_Bold/Ubuntu_Bold.woff') format('woff'),
+		url('../fonts/Ubuntu_Bold/Ubuntu_Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu_Medium/Ubuntu_Medium.eot');
+	src: local('Ubuntu_Medium'), local('../fonts/Ubuntu_Medium/Ubuntu_Medium'),
+		url('../fonts/Ubuntu_Medium/Ubuntu_Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Ubuntu_Medium/Ubuntu_Medium.woff') format('woff'),
+		url('../fonts/Ubuntu_Medium/Ubuntu_Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu_Regular/Ubuntu_Regular.eot');
+	src: local('Ubuntu_Regular'), local('../fonts/Ubuntu_Regular/Ubuntu_Regular'),
+		url('../fonts/Ubuntu_Regular/Ubuntu_Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Ubuntu_Regular/Ubuntu_Regular.woff') format('woff'),
+		url('../fonts/Ubuntu_Regular/Ubuntu_Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

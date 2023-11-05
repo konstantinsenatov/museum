@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet">
+    <title>page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" data-aos="fade"> 
+        <div class="search-header">
+          <div class="search-header__container">
+            <div class="search-header__input"> 
+              <input type="text" placeholder="Введите запрос...">
+            </div>
+            <div class="search-header__close"></div>
+          </div>
+        </div>
+        <div class="container header__container"> <a class="header__logo logo" href="index.html"> <img src="images/icons/logo.svg" alt="alt"></a>
+          <div class="header__left"> 
+            <div class="header__burger"> <span class="bvi-no-styles"> </span><span class="bvi-no-styles"> </span><span class="bvi-no-styles"> </span></div>
+            <div class="header__menu menu"> 
+              <div class="menu__overlay"></div>
+              <div class="menu__close"> </div>
+              <ul class="menu__list"> 
+                <li class="menu__item"> 
+                  <div class="menu__link">Выставки и события<span class="menu__item-triangle"></span></div>
+                  <div class="submenu submenu1">
+                    <ul class="submenu__list"> 
+                      <li class="submenu__item"> <a class="submenu__link" href="events-page.html">Выставки и события</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Специальные проекты</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Коллекции музея онлайн</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__link">Посетителям<span class="menu__item-triangle"></span></div>
+                  <div class="submenu submenu2">
+                    <ul class="submenu__list"> 
+                      <li class="submenu__item"> <a class="submenu__link" href="">Пушкинская карта</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Цены и льготы</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Спланировать визит</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__link">Музей<span class="menu__item-triangle"></span></div>
+                  <div class="submenu submenu3">
+                    <ul class="submenu__list"> 
+                      <li class="submenu__item"> <a class="submenu__link" href="">История</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Главное здание</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Дом Ремесел</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">КВЦ Русского музея</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Контакты</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Сотрудники</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Официальные материалы</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Противодействие коррупции</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu__item"> <a class="menu__link menu__link--color" href="">Медиацентр</a></li>
+              </ul>
+              <div class="header__btn btn-header btn-header-mobile"><a class="btn-header__text" href="#btn-header-mobile">Купить билет </a>
+                <ul class="btn-header__list" id="btn-header-mobile"> 
+                  <li class="btn-header__item"> <a class="btn-header__link" href="">Главное здание</a></li>
+                  <li class="btn-header__item"> <a class="btn-header__link" href="">КВЦ Русского музея</a></li>
+                  <li class="btn-header__item"> <a class="btn-header__link" href="">Дом ремесел</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__right"> 
+            <div class="header__icons"> 
+              <div class="header__search"> <img src="images/icons/search.svg" alt="alt"></div><a class="header__visible" href="#"><img src="images/icons/eye.svg" alt="alt"></a>
+            </div>
+            <div class="header__btn btn-header btn-header-desktop">
+              <div class="btn-header__text">Купить билет </div>
+              <ul class="btn-header__list"> 
+                <li class="btn-header__item"> <a class="btn-header__link" href="">Главное здание</a></li>
+                <li class="btn-header__item"> <a class="btn-header__link" href="">КВЦ Русского музея</a></li>
+                <li class="btn-header__item"> <a class="btn-header__link" href="">Дом ремесел</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="internal-page">
+          <div class="mediacenter-page" data-aos="fade">
+            <div class="mediacenter-page__header"> 
+              <div class="container">
+                <h1>Медиацентр </h1>
+                <div class="mediacenter-page__filter-wrapper">
+                  <div class="mediacenter-page__item-text">
+                     Формат события<span class="mediacenter-page__item-arrow"> <img src="images/icons/arrow-black-bottom.svg" alt="alt"></span></div>
+                  <div class="mediacenter-page__filter">
+                    <div class="checkbox">
+                      <input class="checkbox__input" id="mediacenter-page__filter1" checked="" type="checkbox" name="" value=".articles">
+                      <label class="checkbox__label" for="mediacenter-page__filter1">
+                        <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div><span>СТАТЬИ</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" id="mediacenter-page__filter2" checked="" type="checkbox" name="" value=".news">
+                      <label class="checkbox__label" for="mediacenter-page__filter2">
+                        <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div><span>НОВОСТИ</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" id="mediacenter-page__filter3" checked="" type="checkbox" name="" value=".photo-report">
+                      <label class="checkbox__label" for="mediacenter-page__filter3">
+                        <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div><span>ФОТООТЧЕТ</span>
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <input class="checkbox__input" id="mediacenter-page__filter4" checked="" type="checkbox" name="" value=".postrelease">
+                      <label class="checkbox__label" for="mediacenter-page__filter4">
+                        <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div><span>ПОСТРЕЛИЗ</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="mediacenter-page__items-bottom"> 
+                  <div class="mediacenter-page__selected">
+                     СТАТЬИ<span class="mediacenter-page__selected-remove"> </span></div>
+                  <div class="mediacenter-page__selected">
+                     ФОТООТЧЕТ<span class="mediacenter-page__selected-remove"> </span></div>
+                  <div class="mediacenter-page__selected">
+                     НОВОСТИ<span class="mediacenter-page__selected-remove"> </span></div>
+                  <div class="mediacenter-page__selected">
+                     ПОСТРЕЛИЗ<span class="mediacenter-page__selected-remove"> </span></div>
+                </div>
+                <p role="status"></p>
+                <div class="mediacenter-page__items">
+                  <div class="mediacenter-page__item-wrapper articles"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper articles"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">23</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper articles"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper articles"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">18</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper news"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper news"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">15</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper news"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper news"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">25</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper photo-report"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">30</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper photo-report"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper photo-report"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper photo-report"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper postrelease"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">14</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper postrelease"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">13</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper postrelease"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">01</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper postrelease"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">11</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper news"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper news"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">15</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper news"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper news"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">25</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper photo-report"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">30</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper photo-report"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper photo-report"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper photo-report"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">12</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper postrelease"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">14</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper postrelease"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">13</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper postrelease"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">01</span><span class="item-mediacenter__date-month">декабря</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                  <div class="mediacenter-page__item-wrapper postrelease"> 
+                    <div class="mediacenter__item item-mediacenter"> 
+                      <div class="item-mediacenter__date"> <span class="item-mediacenter__date-num">11</span><span class="item-mediacenter__date-month">июня</span></div>
+                      <div class="item-mediacenter__description">Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" data-aos="fade"> 
+        <div class="container footer__container"> 
+          <div class="footer__top"> 
+            <div class="footer__row"> 
+              <div class="item-footer"> 
+                <div class="item-footer__title">ВЫСТАВКИ И СОБЫТИЯ</div>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Выставки и события</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Выставки и события</a></li>
+                </ul>
+              </div>
+              <div class="item-footer"> 
+                <div class="item-footer__title">ПОСЕТИТЕЛЯМ</div>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Спланировать визит</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Спланировать визит</a></li>
+                </ul>
+              </div>
+              <div class="item-footer"> 
+                <div class="item-footer__title">Музей</div>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">История</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">История</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Дом Ремесел</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">КВЦ Русского музея</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Контакты</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Сотрудники</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Официальные материалы</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Противодействие коррупции</a></li>
+                </ul>
+              </div>
+              <div class="item-footer"> 
+                <div class="item-footer__title">МЕДИАЦЕНТР</div>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Медиацентр</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__middle">
+            <div class="footer__row">
+              <div class="item-footer">
+                <div class="item-footer__title">МЫ В СОЦСЕТЯХ</div>
+                <div class="item-footer__social"> <a href="">VK</a><a href="">VK</a><a href="">INSTAGRAM</a><a href="">TWITTER</a><a href="">ОДНОКЛАССНИКИ</a><a href="">YOUTUBE</a></div>
+              </div>
+              <div class="item-footer">
+                <div class="item-footer__title">КОНТАКТЫ</div>
+                <div class="item-footer__contacts">
+                  <div class="item-footer__contact"> <a href="">Главное здание:  ул. Коминтерна 13</a><a href="tel:8152450385">Тел: +7(8152)45-03-85</a><a href="mailto:info@artmmuseum.ru">E-mail: info@artmmuseum.ru</a></div>
+                  <div class="item-footer__contact"> <a href="">Дом ремесел: ул.Книповича, д.23А</a><a href="tel:8152994358">Тел: 8 (8152) 994-358</a><a href="mailto:info@artmmuseum.ru">E-mail: kvcrm@artmmuseum.ru</a></div>
+                  <div class="item-footer__contact"> <a href="">КВЦ: ул. Софьи Перовской, 3, II этаж</a><a href="tel:8152450860">Тел: (8152) 45-08-60</a><a href="mailto:info@artmmuseum.ru">E-mail: kvcrm@artmmuseum.ru</a></div>
+                </div>
+              </div>
+              <div class="item-footer item-footer__schedule-wrapper">
+                <div class="item-footer__title">ЧАСЫ РАБОТЫ</div>
+                <div class="item-footer__schedule">
+                   Ср, Чт, Пт, Сб, Вс: 11:00 - 19:00<br>Кассы закрываются за полчаса до окончания работы музея</div>
+              </div>
+              <div class="item-footer">
+                <div class="item-footer__title">ПОДПИСАТЬСЯ НА НОВОСТИ</div>
+                <div class="item-footer__news"> 
+                  <div class="item-footer__input input-white">
+                    <input type="email" placeholder="E-mail">
+                    <button type="submit"> </button>
+                  </div>
+                  <div class="item-footer__agreement agreement agreement-white">
+                    <div class="checkbox">
+                      <input class="checkbox__input" id="formAgreement" checked="" type="checkbox" name="agreement">
+                      <label class="checkbox__label" for="formAgreement">
+                        <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-white.svg" alt="alt"></div><span>Я согласен с политикой обработки персональных данных</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom"> 
+            <div class="footer__row"> 
+              <div class="item-footer item-footer--big">© 2012-2022 Мурманский областной художественный музей</div>
+              <div class="item-footer">Политика конфиденциальности</div>
+              <div class="item-footer">Разработано в Bofer.ru</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

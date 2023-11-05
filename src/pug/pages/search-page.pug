@@ -1,0 +1,399 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'page'
+		};
+
+block main
+	.internal-page 
+		.search-page 
+			.search-page__header(data-aos="fade") 
+				.container 
+					h1 Поиск 
+					.search-page__header-row 
+						input.search-page__input(type="text" value="Кандинский") 
+						button.search-page__button.btn-transparent 
+							span Поиск 
+			.search-result(data-aos="fade") 
+				.search-result__container.container 
+					.search-result__sidebar 
+						ul.search-result__sidebar-btns 
+							li.btn-transparent.active 
+								span.search-result__sidebar-text Общий результат:
+								span.search-result__sidebar-num 120
+							li.btn-transparent 
+								span.search-result__sidebar-text Выставки и события
+								span.search-result__sidebar-num 20
+							li.btn-transparent 
+								span.search-result__sidebar-text Посетителям
+								span.search-result__sidebar-num 10
+							li.btn-transparent 
+								span.search-result__sidebar-text Музей
+								span.search-result__sidebar-num 15
+							li.btn-transparent 
+								span.search-result__sidebar-text Медиацентр
+								span.search-result__sidebar-num 15
+
+					.search-result__content.result-search-content 
+						.search-result__content-tab.active
+							h2 Результаты поиска: 
+							.result-search-content__items
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p 
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p 
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+							.search-result__pagination 
+								ul 
+									li.active 1
+									li 2
+									li 3
+									li 4
+									li 5
+									li 6
+									li 7
+									li ...
+									li 20
+								.search-result__pagination-next
+							.show-more-btn-wrapper.js-hide
+								.search-result__constant-show-more.show-more-btn
+									span Показать еще
+									img(src="images/icons/arrow-grey-bottom.svg", alt="alt").arrow-grey-bottom
+
+						.search-result__content-tab
+							h2 Результаты поиска: 
+							.result-search-content__items
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p 
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p 
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+							.search-result__pagination 
+								ul 
+									li.active 1
+									li 2
+									li 3
+									li 4
+									li 5
+									li 6
+									li 7
+									li ...
+									li 20
+								.search-result__pagination-next
+							.show-more-btn-wrapper.js-hide
+								.search-result__constant-show-more.show-more-btn
+									span Показать еще
+									img(src="images/icons/arrow-grey-bottom.svg", alt="alt").arrow-grey-bottom
+
+						.search-result__content-tab
+							h2 Результаты поиска: 
+							.result-search-content__items
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p 
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p 
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+							.search-result__pagination 
+								ul 
+									li.active 1
+									li 2
+									li 3
+									li 4
+									li 5
+									li 6
+									li 7
+									li ...
+									li 20
+								.search-result__pagination-next
+							.show-more-btn-wrapper.js-hide
+								.search-result__constant-show-more.show-more-btn
+									span Показать еще
+									img(src="images/icons/arrow-grey-bottom.svg", alt="alt").arrow-grey-bottom
+
+						.search-result__content-tab
+							h2 Результаты поиска: 
+							.result-search-content__items
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p 
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p 
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+							.search-result__pagination 
+								ul 
+									li.active 1
+									li 2
+									li 3
+									li 4
+									li 5
+									li 6
+									li 7
+									li ...
+									li 20
+								.search-result__pagination-next
+							.show-more-btn-wrapper.js-hide
+								.search-result__constant-show-more.show-more-btn
+									span Показать еще
+									img(src="images/icons/arrow-grey-bottom.svg", alt="alt").arrow-grey-bottom
+
+						.search-result__content-tab
+							h2 Результаты поиска: 
+							.result-search-content__items
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+									p 
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор».  Подробный текст.
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p 
+								.result-search-content__item
+									p Итсория
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+								.result-search-content__item
+									.result-search-content__item-header 
+										span 05 АВГ 2022
+										span фотоотчет
+										span ГЛАВНОЕ ЗДАНИЕ
+									p Выставка «Кандинский, Василий Васильевич »
+							.search-result__pagination 
+								ul 
+									li.active 1
+									li 2
+									li 3
+									li 4
+									li 5
+									li 6
+									li 7
+									li ...
+									li 20
+								.search-result__pagination-next
+							.show-more-btn-wrapper.js-hide
+								.search-result__constant-show-more.show-more-btn
+									span Показать еще
+									img(src="images/icons/arrow-grey-bottom.svg", alt="alt").arrow-grey-bottom
+

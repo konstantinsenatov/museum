@@ -1,0 +1,128 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'page'
+		};
+
+block main
+	.internal-page
+		.plan-page
+			.plan-page__header(data-aos="fade") 
+				.container
+					h1 Спланировать визит 
+					.plan-page__header-bottom
+						.plan-page__swiper-btns.swiper(thumbsslider='') 
+							.swiper-wrapper 
+								.plan-page__slide.swiper-slide 
+									.plan-page__swiper-btn.btn-transparent Главное здание
+								.plan-page__slide.swiper-slide 
+									.plan-page__swiper-btn.btn-transparent КВЦ Русского музея
+								.plan-page__slide.swiper-slide 
+									.plan-page__swiper-btn.btn-transparent Дом ремесел
+			.swiper.swiper-plan-map(data-aos="fade")
+				.swiper-wrapper
+					.swiper-slide
+						.plan-page__content
+							.container
+								.block-left-right__row 
+									.block-left 
+										p(style="font-weight: 500; margin-bottom: 7px;") Главное здание
+										p 
+											|183038 г. Мурманск, ул. Коминтерна 13
+										p 
+											a(href="") +7(8152)45-03-85
+										p 
+											a(href="") info@artmmuseum.ru
+									.block-right 
+										.block-left-right__map-wrapper
+											#plan__map1.block-left-right__map 
+					.swiper-slide
+						.plan-page__content
+							.container
+								.block-left-right__row 
+									.block-left 
+										p(style="font-weight: 500; margin-bottom: 7px;") КВЦ Русского музея
+										p 
+											|г. Мурманск, ул. Софьи Перовской, 3, II этаж
+										p 
+											a(href="") 8 (8152) 994-358
+										p 
+											a(href="") 8 (8152) 994-357
+										p 
+											a(href="") info@artmmuseum.ru
+									.block-right 
+										.block-left-right__map-wrapper
+											#plan__map2.block-left-right__map 
+					.swiper-slide
+						.plan-page__content
+							.container
+								.block-left-right__row 
+									.block-left 
+										p(style="font-weight: 500; margin-bottom: 7px;") Дом ремесел
+										p 
+											|г.Мурманск, ул.Книповича, д.23А
+										p 
+											a(href="") (8152) 45-08-60
+										p 
+											a(href="") (8152) 45-08-38
+										p 
+											a(href="") onir@artmmuseum.ru
+									.block-right 
+										.block-left-right__map-wrapper
+											#plan__map3.block-left-right__map 
+			.prices-page__left-right.block-left-right(data-aos="fade") 
+				.container 
+					.block-left-right__item-border 
+						.block-left-right__row 
+							.block-left 
+								h3 Как добраться:
+							.block-right 
+								p Троллейбусы:
+								ul 
+									li № 3, 6 до остановки «Пять углов»;
+									li № 2, 4 до остановки «Привокзальная площадь».
+								p Автобусы:
+								ul 
+									li №18 до остановки «Пять углов» или «Улица Профсоюзов» (только с севера);
+									li №1, 5, 33 до остановки «Привокзальная площадь».
+					.block-left-right__item-border 
+						.block-left-right__row 
+							.block-left 
+								h3 График работы
+							.block-right.block-right-schedule 
+								ul.block-right-schedule-top 
+									li Пн.
+									li Вт.
+									li Ср.
+									li Чт.
+									li Пт.
+									li Сб.
+									li Вс.
+								ul.block-right-schedule-bottom 
+									li Выходной
+									li 11:00 – 19:00
+								p.block-right-schedule 
+									|*Кассы закрываются за полчаса до окончания работы музея
+					.block-left-right__item-border 
+						.block-left-right__row 
+							.block-left 
+								h3 Правила посещения
+							.block-right 
+								ul
+									li Можно фотографировать без вспышки (если иное не указано на странице мероприятия)
+									li Сумки и крупногабаритные предметы, верхнюю одежду следует оставлять в гардеробобе
+									li Верхнюю одежду, большие сумки и пакеты посетители должны сдавать в гардероб.
+									li В залах музея необходимо соблюдать тишину. Нельзя громко разговаривать, шуметь, бегать.
+									li Во время экскурсии нельзя перебивать экскурсовода. Если Вы с чем-то не согласны или хотите задать вопрос, дождитесь паузы. Если Вы хотите изложить свою точку зрения, лучше это сделать в конце экскурсии.
+									li Нельзя прикасаться к экспонатам, а также к стеклянным витринам.
+									li С напитками и едой не следует
+					.block-left-right__item-border 
+						.block-left-right__row 
+							.block-left 
+								h3 Полезные ссылки
+							.block-right.block-right-btns 
+								a(href='').block-right__btn.btn-transparent ЭКСКУРСИИ
+								a(href='').block-right__btn.btn-transparent СТОИМОСТЬ ПОСЕЩЕНИЯ
+								a(href='').block-right__btn.block-right__btn--big.btn-transparent КУПИТЬ БИЛЕТ

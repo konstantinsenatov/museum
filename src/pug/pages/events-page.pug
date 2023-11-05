@@ -1,0 +1,543 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'page'
+		};
+
+block main
+	.internal-page
+		.events-page(data-aos="fade")
+			.events-page__header 
+				.container
+					h1 Выставки и события
+					.filter-events
+						.filter-events__container
+							.filter-events__items-top 
+								.filter-events__item-top 
+									.filter-events__item-text 
+										|Формат события
+										span.filter-events__item-arrow 
+											img(src="images/icons/arrow-black-bottom.svg", alt="alt")
+									.filter-events__dropdown
+										.filter-events__dropdown-item 
+											.checkbox
+												input#filter-events__dropdown-item1.checkbox__input(type='checkbox' name='agreement')
+												label.checkbox__label(for='filter-events__dropdown-item1')
+													.checkbox__label-arrow
+														img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+											span.filter-events__dropdown-text
+												|Выставка 
+										.filter-events__dropdown-item 
+											.checkbox
+												input#filter-events__dropdown-item2.checkbox__input(type='checkbox' name='agreement')
+												label.checkbox__label(for='filter-events__dropdown-item2')
+													.checkbox__label-arrow
+														img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+											span.filter-events__dropdown-text
+												|Экскурсия 
+										.filter-events__dropdown-item 
+											.checkbox
+												input#filter-events__dropdown-item3.checkbox__input(type='checkbox' name='agreement')
+												label.checkbox__label(for='filter-events__dropdown-item3')
+													.checkbox__label-arrow
+														img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+											span.filter-events__dropdown-text
+												|Виртуальная выставка 
+										.filter-events__dropdown-item 
+											.checkbox
+												input#filter-events__dropdown-item4.checkbox__input(type='checkbox' name='agreement')
+												label.checkbox__label(for='filter-events__dropdown-item4')
+													.checkbox__label-arrow
+														img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+											span.filter-events__dropdown-text
+												|Иное 
+										.filter-events__dropdown-item 
+											.checkbox
+												input#filter-events__dropdown-item5.checkbox__input(type='checkbox' name='agreement')
+												label.checkbox__label(for='filter-events__dropdown-item5')
+													.checkbox__label-arrow
+														img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+											span.filter-events__dropdown-text
+												|Мастер-класс 
+										.filter-events__dropdown-item 
+											.checkbox
+												input#filter-events__dropdown-item6.checkbox__input(type='checkbox' name='agreement')
+												label.checkbox__label(for='filter-events__dropdown-item6')
+													.checkbox__label-arrow
+														img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+											span.filter-events__dropdown-text
+												|Мероприятие 
+								.filter-events__item-top 
+									.filter-events__item-text 
+										|Место
+										span.filter-events__item-arrow 
+											img(src="images/icons/arrow-black-bottom.svg", alt="alt")
+									.filter-events__dropdown
+										.filter-events__dropdown-item 
+											.checkbox
+												input#filter-events__dropdown-item11.checkbox__input(type='checkbox' name='agreement')
+												label.checkbox__label(for='filter-events__dropdown-item11')
+													.checkbox__label-arrow
+														img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+											span.filter-events__dropdown-text
+												|Главное здание 
+										.filter-events__dropdown-item 
+											.checkbox
+												input#filter-events__dropdown-item22.checkbox__input(type='checkbox' name='agreement')
+												label.checkbox__label(for='filter-events__dropdown-item22')
+													.checkbox__label-arrow
+														img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+											span.filter-events__dropdown-text
+												|Дом ремесел 
+										.filter-events__dropdown-item 
+											.checkbox
+												input#filter-events__dropdown-item33.checkbox__input(type='checkbox' name='agreement')
+												label.checkbox__label(for='filter-events__dropdown-item33')
+													.checkbox__label-arrow
+														img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+											span.filter-events__dropdown-text
+												|КВЦ Русского музея 
+								.filter-events__item-calendar  
+									.filter-events__item-text 
+										|Дата
+										input.filter-events__item-datepicker(type='text')
+										span.filter-events__item-arrow 
+											img(src="images/icons/arrow-black-bottom.svg", alt="alt")
+										.autoreply__item--row.autoreply__item--row-arrow
+							.filter-events__items-bottom 
+								.filter-events__selected 
+									|ВЫСТАВКА
+									span.filter-events__selected-remove 
+								.filter-events__selected 
+									|Экскурсия
+									span.filter-events__selected-remove 
+								.filter-events__selected 
+									|Главное здание
+									span.filter-events__selected-remove 
+								.filter-events__selected 
+									|С 01.01.2023 по 02.06.2023
+									span.filter-events__selected-remove 
+
+
+					
+			.events-page__constant 
+				section.events
+					.container.events__container 
+						h2 Постоянная экспозиция
+						.events__row
+							.events__item.events__item-constant.item-shown 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/1.jpg", srcset="images/pages/events-page/current/1-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.events__item-constant.item-shown 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/2.jpg", srcset="images/pages/events-page/current/2-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича 
+							.events__item.events__item-constant.item-shown 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/3.jpg", srcset="images/pages/events-page/current/3-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла выставок «С днем
+							.events__item.events__item-constant.item-shown 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/4.jpg", srcset="images/pages/events-page/current/4-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.events__item-constant.item-hidden 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/2.jpg", srcset="images/pages/events-page/current/2-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.events__item-constant.item-hidden 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/4.jpg", srcset="images/pages/events-page/current/4-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.events__item-constant.item-hidden 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/2.jpg", srcset="images/pages/events-page/current/2-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.events__item-constant.item-hidden 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/1.jpg", srcset="images/pages/events-page/current/1-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.events__item-constant.item-hidden 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/3.jpg", srcset="images/pages/events-page/current/3-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.events__item-constant.item-hidden 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/constant/4.jpg", srcset="images/pages/events-page/current/4-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+						.show-more-btn-wrapper.js-hide
+							.events-page__constant-show-more.show-more-btn
+								span Показать еще
+								img(src="images/icons/arrow-grey-bottom.svg", alt="alt").arrow-grey-bottom
+
+			.events-page__current 
+				section.events
+					.container.events__container 
+						h2  Текущие выставки
+						.events__row
+							.events__item.item-shown.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/1.jpg", srcset="images/pages/events-page/current/1-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/2.jpg", srcset="images/pages/events-page/current/2-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/3.jpg", srcset="images/pages/events-page/current/3-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/4.jpg", srcset="images/pages/events-page/current/4-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/5.jpg", srcset="images/pages/events-page/current/5-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/6.jpg", srcset="images/pages/events-page/current/6-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/7.jpg", srcset="images/pages/events-page/current/7-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/8.jpg", srcset="images/pages/events-page/current/8-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/5.jpg", srcset="images/pages/events-page/current/5-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/6.jpg", srcset="images/pages/events-page/current/6-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/8.jpg", srcset="images/pages/events-page/current/8-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/3.jpg", srcset="images/pages/events-page/current/3-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/2.jpg", srcset="images/pages/events-page/current/2-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-current 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/1.jpg", srcset="images/pages/events-page/current/1-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+						.show-more-btn-wrapper.js-hide
+							.events-page__current-show-more.show-more-btn
+								span Показать еще
+								img(src="images/icons/arrow-grey-bottom.svg", alt="alt").arrow-grey-bottom
+
+			.events-page__future 
+				section.events
+					.container.events__container 
+						h2 Будущие выставки
+						.events__row
+							.events__item.item-shown.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/1.jpg", srcset="images/pages/events-page/current/1-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/4.jpg", srcset="images/pages/events-page/current/4-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/5.jpg", srcset="images/pages/events-page/current/5-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-shown.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/8.jpg", srcset="images/pages/events-page/current/8-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/5.jpg", srcset="images/pages/events-page/current/5-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/6.jpg", srcset="images/pages/events-page/current/6-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/8.jpg", srcset="images/pages/events-page/current/8-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/3.jpg", srcset="images/pages/events-page/current/3-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/2.jpg", srcset="images/pages/events-page/current/2-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+							.events__item.item-hidden.events__item-future 
+								.events__card.card-general 
+									.card-general__label УЖЕ ИДЕТ – 05 АВГ 2022
+									.card-general__img 
+										img(src="images/pages/events-page/current/1.jpg", srcset="images/pages/events-page/current/1-2x.jpg", alt="alt")
+									.card-general__spans 
+										span ВЫСТАВКА
+										span ГЛАВНОЕ ЗДАНИЕ
+									.card-general__description Представляем произведение Юрия Алексеевича Панкова в рамках цикла 
+						.show-more-btn-wrapper.js-hide
+							.events-page__future-show-more.show-more-btn
+								span Показать еще
+								img(src="images/icons/arrow-grey-bottom.svg", alt="alt").arrow-grey-bottom
+			
+			
+			.events-page__tags
+				section.tags
+					.container
+						.tags__items 
+							.tags__row 
+								.tags__item
+									.card-tags
+										.card-tags__column 
+											h5.card-tags__top 
+												span # 
+												|Видеопоказы
+											.card-tags__bottom
+												span Описательные текст видеопоказов, интересный классный текст
+												img(src="images/blocks/tags/1.svg", alt="alt")
+								.tags__item
+									.card-tags
+										.card-tags__column 
+											h5.card-tags__top 
+												span # 
+												|Клубы
+											.card-tags__bottom
+												span Описательные текст видеопоказов, интересный классный текст
+												img(src="images/blocks/tags/2.svg", alt="alt")
+								.tags__item
+									.card-tags
+										.card-tags__column 
+											h5.card-tags__top 
+												span # 
+												|Интерактивное пространство
+											.card-tags__bottom
+												span Описательные текст видеопоказов, интересный классный текст
+												img(src="images/blocks/tags/3.svg", alt="alt")
+								.tags__item
+									.card-tags
+										.card-tags__column 
+											h5.card-tags__top 
+												span # 
+												|Мастер - класс
+											.card-tags__bottom
+												span Описательные текст видеопоказов, интересный классный текст
+												img(src="images/blocks/tags/4.svg", alt="alt")
+								.tags__item
+									.card-tags
+										.card-tags__column 
+											h5.card-tags__top 
+												span # 
+												|Просвещение
+											.card-tags__bottom
+												span Описательные текст видеопоказов, интересный классный текст
+												img(src="images/blocks/tags/5.svg", alt="alt")
+								.tags__item
+									.card-tags
+										.card-tags__column 
+											h5.card-tags__top 
+												span # 
+												|Приложения
+											.card-tags__bottom
+												span Описательные текст видеопоказов, интересный классный текст
+												img(src="images/blocks/tags/6.svg", alt="alt")
+								.tags__item
+									.card-tags
+										.card-tags__column 
+											h5.card-tags__top 
+												span # 
+												|Курсы
+											.card-tags__bottom
+												span Описательные текст видеопоказов, интересный классный текст
+												img(src="images/blocks/tags/7.svg", alt="alt")
+								.tags__item
+									.card-tags
+										.card-tags__column 
+											h5.card-tags__top 
+												span # 
+												|Экскурсия
+											.card-tags__bottom
+												span Описательные текст видеопоказов, интересный классный текст
+												img(src="images/blocks/tags/8.svg", alt="alt")
+
+						.show-more-btn-wrapper.js-hide
+							.tags__show-more-btn.show-more-btn
+								span Смотреть все теги
+								img(src="images/icons/arrow-grey-bottom.svg", alt="alt").arrow-grey-bottom

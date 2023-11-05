@@ -1,0 +1,18 @@
+.anti-corruption {
+	&__header  {
+		.block-right {
+			margin: 0!important;
+		}
+	}
+	.block-left-right {
+		margin-top: 50px;
+	}
+	.block-right h3 {
+		margin-top: 32px;
+		margin-bottom: 32px;
+	}
+	ul {
+		margin: 0;
+		margin-top: 9px;
+	}
+}

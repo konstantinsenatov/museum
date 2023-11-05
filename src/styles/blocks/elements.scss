@@ -1,0 +1,67 @@
+.elements {
+	margin-top: calc((1920px * 20px) / 1440px);
+	position: relative;
+	&::before{
+		content:'';
+		position: absolute;
+		z-index: -1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background: #330755;
+		filter: blur(calc((1920px * 124px) / 1440px));
+		width: calc((1920px * 1362px) / 1440px);
+		height: calc((1920px * 535px) / 1440px);
+		max-width: 100%;
+	}
+	&__container  {
+		width: calc((1920px * 1186px) / 1440px);
+		max-width: 100%;
+		margin: 0 auto;
+	}
+	p {
+		margin: calc((1920px * 16px) / 1440px) auto 0;
+		max-width: calc((1920px * 579px) / 1440px);
+		text-align: center;
+	}
+	&__items {
+		margin-top: calc((1920px * 16px) / 1440px);
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	} 
+	&__item {
+		padding: calc((1920px * 32px) / 1440px) calc((1920px * 11px) / 1440px);
+		flex: 0 1 25%;
+	} 
+	&__column {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h3 {
+			margin-top: calc((1920px * 40px) / 1440px);
+		}
+		p {
+			margin-top: calc((1920px * 12px) / 1440px);
+			text-align: left;
+		}
+	} 
+	&__icon {
+		padding: 0 calc((1920px * 12px) / 1440px);
+		min-width: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	} 
+	&__btn {
+		width: calc((1920px * 200px) / 1440px);
+		height: calc((1920px * 64px) / 1440px);
+		&-wrapper {
+			margin-top: calc((1920px * 4px) / 1440px);
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

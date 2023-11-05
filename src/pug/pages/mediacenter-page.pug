@@ -1,0 +1,240 @@
+extends ../layouts/default
+
+block vars
+	-
+		const page = {
+			title: 'page'
+		};
+
+block main
+	.internal-page
+		.mediacenter-page(data-aos="fade")
+			.mediacenter-page__header 
+				.container
+					h1 Медиацентр 
+					.mediacenter-page__filter-wrapper
+						.mediacenter-page__item-text 
+							|Формат события
+							span.mediacenter-page__item-arrow 
+								img(src="images/icons/arrow-black-bottom.svg", alt="alt")
+						.mediacenter-page__filter
+							.checkbox
+								input#mediacenter-page__filter1.checkbox__input(checked='' type='checkbox' name='' value='.articles')
+								label.checkbox__label(for='mediacenter-page__filter1')
+									.checkbox__label-arrow
+										img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+									span
+										|СТАТЬИ
+							.checkbox
+								input#mediacenter-page__filter2.checkbox__input(checked='' type='checkbox' name='' value='.news')
+								label.checkbox__label(for='mediacenter-page__filter2')
+									.checkbox__label-arrow
+										img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+									span
+										|НОВОСТИ
+							.checkbox
+								input#mediacenter-page__filter3.checkbox__input(checked='' type='checkbox' name='' value='.photo-report')
+								label.checkbox__label(for='mediacenter-page__filter3')
+									.checkbox__label-arrow
+										img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+									span
+										|ФОТООТЧЕТ
+							.checkbox
+								input#mediacenter-page__filter4.checkbox__input(checked='' type='checkbox' name='' value='.postrelease')
+								label.checkbox__label(for='mediacenter-page__filter4')
+									.checkbox__label-arrow
+										img(src="images/icons/arrow-checkbox-black.svg", alt="alt")
+									span
+										|ПОСТРЕЛИЗ
+					.mediacenter-page__items-bottom 
+						.mediacenter-page__selected 
+							|СТАТЬИ
+							span.mediacenter-page__selected-remove 
+						.mediacenter-page__selected 
+							|ФОТООТЧЕТ
+							span.mediacenter-page__selected-remove 
+						.mediacenter-page__selected 
+							|НОВОСТИ
+							span.mediacenter-page__selected-remove 
+						.mediacenter-page__selected 
+							|ПОСТРЕЛИЗ
+							span.mediacenter-page__selected-remove 
+
+					p(role='status')
+					.mediacenter-page__items
+						.mediacenter-page__item-wrapper.articles 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.articles 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 23
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.articles 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.articles 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 18
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+
+						.mediacenter-page__item-wrapper.news 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.news 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 15
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.news 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.news 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 25
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+
+						.mediacenter-page__item-wrapper.photo-report 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 30
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.photo-report 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.photo-report 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.photo-report 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+
+						.mediacenter-page__item-wrapper.postrelease 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 14
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.postrelease 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 13
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.postrelease 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 01
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.postrelease 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 11
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+
+						.mediacenter-page__item-wrapper.news 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.news 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 15
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.news 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.news 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 25
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+
+						.mediacenter-page__item-wrapper.photo-report 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 30
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.photo-report 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.photo-report 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.photo-report 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 12
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+
+						.mediacenter-page__item-wrapper.postrelease 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 14
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.postrelease 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 13
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.postrelease 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 01
+									span.item-mediacenter__date-month декабря
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+						.mediacenter-page__item-wrapper.postrelease 
+							.mediacenter__item.item-mediacenter 
+								.item-mediacenter__date 
+									span.item-mediacenter__date-num 11
+									span.item-mediacenter__date-month июня
+								.item-mediacenter__description Планирование мероприятий музейного молодежного дискуссионного клуба «Арт-проектор». 
+
+

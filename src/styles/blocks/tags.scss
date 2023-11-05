@@ -1,0 +1,90 @@
+.tags {
+	overflow: hidden;
+	margin-bottom: 90px;
+	@media (max-width: 992px){
+		margin-bottom: 70px;
+	}
+	@media (max-width: 639px){
+		margin-bottom: 60px;
+	}
+	&__items {
+		margin: -10px;
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		padding: 10px;
+		width: 25%;
+		@media (max-width: 992px){
+			width: 50%;
+		}
+		@media (max-width: 639px){
+			width: 100%;
+			display: none;
+			&:nth-child(1), 
+			&:nth-child(2), 
+			&:nth-child(3){
+				display: block;
+			}
+		}
+		.card-tags {
+			min-height: 150px;
+			transition: all 0.3s ease 0s;
+			&:hover {
+				background-color: #dcdee5;
+			}
+		}
+	}
+	.show-more-btn-wrapper {
+		display: none;
+		@media (max-width: 639px){
+			display: flex;
+		}
+	}
+}
+.card-tags {
+	height: 100%;
+	padding: 15px;
+	background: #E4E6EE;
+	border-radius: 10px;
+	display: flex;
+	&__column {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+	&__top {
+		flex: 1 1 auto;
+		span {
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 27px;
+			line-height: 100%;
+		}
+	}
+	&__bottom {
+		margin-top: 4px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		span {
+			font-family: 'Ubuntu';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 17px;
+			letter-spacing: -0.02em;
+			color: #1C1825;
+		}
+		img {
+			margin-left: 54px;
+			width: 55px;
+			height: 55px;
+			min-width: 55px;
+			min-height: 55px;
+		}
+	}
+}

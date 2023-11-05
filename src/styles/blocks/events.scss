@@ -1,0 +1,67 @@
+.events {
+	margin-top: 90px;
+	@media (max-width: 992px){
+		margin-top: 70px;
+	}
+	@media (max-width: 639px){
+		margin-top: 60px;
+	}
+	&__container {
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -45px -5px 0;
+		@media (max-width: 992px){
+			margin: -5px -5px 0;
+		}
+	}
+	&__item {
+		margin-top: 80px;
+		flex: 0 1 25%;
+		padding: 0 5px;
+		@media (max-width: 992px){
+			margin-top: 30px;
+			flex: 0 1 50%;
+		}
+		@media (max-width: 639px){
+			flex: 1 1 100%;
+		}
+		&:nth-child(1){
+			@media (max-width: 992px){
+				order: -2;
+			}
+		}
+		&:nth-child(3){
+			@media (max-width: 992px){
+				order: -2;
+			}
+		}
+		&--big {
+			flex: 0 1 50%;
+			@media (max-width: 992px){
+				flex: 1 1 100%;
+				order: -1!important;
+			}
+		}
+		&--hideonmobile  {
+			@media (max-width: 992px){
+				display: none;
+			}
+		}
+		.card-general__img {
+			@media (max-width: 992px){
+				height: 400px;
+				img {
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			@media (max-width: 639px){
+				height: 257px;
+			}
+		}
+	}
+	&__card {
+	}
+}

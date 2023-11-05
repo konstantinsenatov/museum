@@ -1,0 +1,30 @@
+.collection {
+	&__container {
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 35px -5px 0;
+		@media (max-width: 639px){
+			margin: -5px -5px 0;
+		}
+	}
+	&__item {
+		flex: 0 1 25%;
+		padding: 0 5px;
+		@media (max-width: 992px){
+			flex: 0 1 50%;
+		}
+		@media (max-width: 639px){
+			flex: 1 1 100%;
+			margin-top: 30px;
+		}
+		&--hideonmobile  {
+			@media (max-width: 992px){
+				display: none;
+			}
+		}
+	}
+	&__card {
+	}
+}

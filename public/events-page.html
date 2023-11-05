@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet">
+    <title>page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header" data-aos="fade"> 
+        <div class="search-header">
+          <div class="search-header__container">
+            <div class="search-header__input"> 
+              <input type="text" placeholder="Введите запрос...">
+            </div>
+            <div class="search-header__close"></div>
+          </div>
+        </div>
+        <div class="container header__container"> <a class="header__logo logo" href="index.html"> <img src="images/icons/logo.svg" alt="alt"></a>
+          <div class="header__left"> 
+            <div class="header__burger"> <span class="bvi-no-styles"> </span><span class="bvi-no-styles"> </span><span class="bvi-no-styles"> </span></div>
+            <div class="header__menu menu"> 
+              <div class="menu__overlay"></div>
+              <div class="menu__close"> </div>
+              <ul class="menu__list"> 
+                <li class="menu__item"> 
+                  <div class="menu__link">Выставки и события<span class="menu__item-triangle"></span></div>
+                  <div class="submenu submenu1">
+                    <ul class="submenu__list"> 
+                      <li class="submenu__item"> <a class="submenu__link" href="events-page.html">Выставки и события</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Специальные проекты</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Коллекции музея онлайн</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__link">Посетителям<span class="menu__item-triangle"></span></div>
+                  <div class="submenu submenu2">
+                    <ul class="submenu__list"> 
+                      <li class="submenu__item"> <a class="submenu__link" href="">Пушкинская карта</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Цены и льготы</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Спланировать визит</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu__item"> 
+                  <div class="menu__link">Музей<span class="menu__item-triangle"></span></div>
+                  <div class="submenu submenu3">
+                    <ul class="submenu__list"> 
+                      <li class="submenu__item"> <a class="submenu__link" href="">История</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Главное здание</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Дом Ремесел</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">КВЦ Русского музея</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Контакты</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Сотрудники</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Официальные материалы</a></li>
+                      <li class="submenu__item"> <a class="submenu__link" href="">Противодействие коррупции</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="menu__item"> <a class="menu__link menu__link--color" href="">Медиацентр</a></li>
+              </ul>
+              <div class="header__btn btn-header btn-header-mobile"><a class="btn-header__text" href="#btn-header-mobile">Купить билет </a>
+                <ul class="btn-header__list" id="btn-header-mobile"> 
+                  <li class="btn-header__item"> <a class="btn-header__link" href="">Главное здание</a></li>
+                  <li class="btn-header__item"> <a class="btn-header__link" href="">КВЦ Русского музея</a></li>
+                  <li class="btn-header__item"> <a class="btn-header__link" href="">Дом ремесел</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__right"> 
+            <div class="header__icons"> 
+              <div class="header__search"> <img src="images/icons/search.svg" alt="alt"></div><a class="header__visible" href="#"><img src="images/icons/eye.svg" alt="alt"></a>
+            </div>
+            <div class="header__btn btn-header btn-header-desktop">
+              <div class="btn-header__text">Купить билет </div>
+              <ul class="btn-header__list"> 
+                <li class="btn-header__item"> <a class="btn-header__link" href="">Главное здание</a></li>
+                <li class="btn-header__item"> <a class="btn-header__link" href="">КВЦ Русского музея</a></li>
+                <li class="btn-header__item"> <a class="btn-header__link" href="">Дом ремесел</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="internal-page">
+          <div class="events-page" data-aos="fade">
+            <div class="events-page__header"> 
+              <div class="container">
+                <h1>Выставки и события</h1>
+                <div class="filter-events">
+                  <div class="filter-events__container">
+                    <div class="filter-events__items-top"> 
+                      <div class="filter-events__item-top"> 
+                        <div class="filter-events__item-text">
+                           Формат события<span class="filter-events__item-arrow"> <img src="images/icons/arrow-black-bottom.svg" alt="alt"></span></div>
+                        <div class="filter-events__dropdown">
+                          <div class="filter-events__dropdown-item"> 
+                            <div class="checkbox">
+                              <input class="checkbox__input" id="filter-events__dropdown-item1" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="filter-events__dropdown-item1">
+                                <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div>
+                              </label>
+                            </div><span class="filter-events__dropdown-text">Выставка </span>
+                          </div>
+                          <div class="filter-events__dropdown-item"> 
+                            <div class="checkbox">
+                              <input class="checkbox__input" id="filter-events__dropdown-item2" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="filter-events__dropdown-item2">
+                                <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div>
+                              </label>
+                            </div><span class="filter-events__dropdown-text">Экскурсия </span>
+                          </div>
+                          <div class="filter-events__dropdown-item"> 
+                            <div class="checkbox">
+                              <input class="checkbox__input" id="filter-events__dropdown-item3" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="filter-events__dropdown-item3">
+                                <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div>
+                              </label>
+                            </div><span class="filter-events__dropdown-text">Виртуальная выставка </span>
+                          </div>
+                          <div class="filter-events__dropdown-item"> 
+                            <div class="checkbox">
+                              <input class="checkbox__input" id="filter-events__dropdown-item4" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="filter-events__dropdown-item4">
+                                <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div>
+                              </label>
+                            </div><span class="filter-events__dropdown-text">Иное </span>
+                          </div>
+                          <div class="filter-events__dropdown-item"> 
+                            <div class="checkbox">
+                              <input class="checkbox__input" id="filter-events__dropdown-item5" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="filter-events__dropdown-item5">
+                                <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div>
+                              </label>
+                            </div><span class="filter-events__dropdown-text">Мастер-класс </span>
+                          </div>
+                          <div class="filter-events__dropdown-item"> 
+                            <div class="checkbox">
+                              <input class="checkbox__input" id="filter-events__dropdown-item6" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="filter-events__dropdown-item6">
+                                <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div>
+                              </label>
+                            </div><span class="filter-events__dropdown-text">Мероприятие </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter-events__item-top"> 
+                        <div class="filter-events__item-text">
+                           Место<span class="filter-events__item-arrow"> <img src="images/icons/arrow-black-bottom.svg" alt="alt"></span></div>
+                        <div class="filter-events__dropdown">
+                          <div class="filter-events__dropdown-item"> 
+                            <div class="checkbox">
+                              <input class="checkbox__input" id="filter-events__dropdown-item11" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="filter-events__dropdown-item11">
+                                <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div>
+                              </label>
+                            </div><span class="filter-events__dropdown-text">Главное здание </span>
+                          </div>
+                          <div class="filter-events__dropdown-item"> 
+                            <div class="checkbox">
+                              <input class="checkbox__input" id="filter-events__dropdown-item22" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="filter-events__dropdown-item22">
+                                <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div>
+                              </label>
+                            </div><span class="filter-events__dropdown-text">Дом ремесел </span>
+                          </div>
+                          <div class="filter-events__dropdown-item"> 
+                            <div class="checkbox">
+                              <input class="checkbox__input" id="filter-events__dropdown-item33" type="checkbox" name="agreement">
+                              <label class="checkbox__label" for="filter-events__dropdown-item33">
+                                <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-black.svg" alt="alt"></div>
+                              </label>
+                            </div><span class="filter-events__dropdown-text">КВЦ Русского музея </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter-events__item-calendar"> 
+                        <div class="filter-events__item-text">
+                           Дата
+                          <input class="filter-events__item-datepicker" type="text"><span class="filter-events__item-arrow"> <img src="images/icons/arrow-black-bottom.svg" alt="alt"></span>
+                          <div class="autoreply__item--row autoreply__item--row-arrow"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-events__items-bottom"> 
+                      <div class="filter-events__selected">
+                         ВЫСТАВКА<span class="filter-events__selected-remove"> </span></div>
+                      <div class="filter-events__selected">
+                         Экскурсия<span class="filter-events__selected-remove"> </span></div>
+                      <div class="filter-events__selected">
+                         Главное здание<span class="filter-events__selected-remove"> </span></div>
+                      <div class="filter-events__selected">
+                         С 01.01.2023 по 02.06.2023<span class="filter-events__selected-remove"> </span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="events-page__constant"> 
+              <section class="events">
+                <div class="container events__container"> 
+                  <h2>Постоянная экспозиция</h2>
+                  <div class="events__row">
+                    <div class="events__item events__item-constant item-shown"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/1.jpg" srcset="images/pages/events-page/current/1-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item events__item-constant item-shown"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/2.jpg" srcset="images/pages/events-page/current/2-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича </div>
+                      </div>
+                    </div>
+                    <div class="events__item events__item-constant item-shown"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/3.jpg" srcset="images/pages/events-page/current/3-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла выставок «С днем</div>
+                      </div>
+                    </div>
+                    <div class="events__item events__item-constant item-shown"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/4.jpg" srcset="images/pages/events-page/current/4-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item events__item-constant item-hidden"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/2.jpg" srcset="images/pages/events-page/current/2-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item events__item-constant item-hidden"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/4.jpg" srcset="images/pages/events-page/current/4-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item events__item-constant item-hidden"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/2.jpg" srcset="images/pages/events-page/current/2-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item events__item-constant item-hidden"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/1.jpg" srcset="images/pages/events-page/current/1-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item events__item-constant item-hidden"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/3.jpg" srcset="images/pages/events-page/current/3-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item events__item-constant item-hidden"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/constant/4.jpg" srcset="images/pages/events-page/current/4-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="show-more-btn-wrapper js-hide">
+                    <div class="events-page__constant-show-more show-more-btn"><span>Показать еще</span><img class="arrow-grey-bottom" src="images/icons/arrow-grey-bottom.svg" alt="alt"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="events-page__current"> 
+              <section class="events">
+                <div class="container events__container"> 
+                  <h2> Текущие выставки</h2>
+                  <div class="events__row">
+                    <div class="events__item item-shown events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/1.jpg" srcset="images/pages/events-page/current/1-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/2.jpg" srcset="images/pages/events-page/current/2-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/3.jpg" srcset="images/pages/events-page/current/3-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/4.jpg" srcset="images/pages/events-page/current/4-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/5.jpg" srcset="images/pages/events-page/current/5-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/6.jpg" srcset="images/pages/events-page/current/6-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/7.jpg" srcset="images/pages/events-page/current/7-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/8.jpg" srcset="images/pages/events-page/current/8-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/5.jpg" srcset="images/pages/events-page/current/5-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/6.jpg" srcset="images/pages/events-page/current/6-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/8.jpg" srcset="images/pages/events-page/current/8-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/3.jpg" srcset="images/pages/events-page/current/3-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/2.jpg" srcset="images/pages/events-page/current/2-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-current"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/1.jpg" srcset="images/pages/events-page/current/1-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="show-more-btn-wrapper js-hide">
+                    <div class="events-page__current-show-more show-more-btn"><span>Показать еще</span><img class="arrow-grey-bottom" src="images/icons/arrow-grey-bottom.svg" alt="alt"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="events-page__future"> 
+              <section class="events">
+                <div class="container events__container"> 
+                  <h2>Будущие выставки</h2>
+                  <div class="events__row">
+                    <div class="events__item item-shown events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/1.jpg" srcset="images/pages/events-page/current/1-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/4.jpg" srcset="images/pages/events-page/current/4-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/5.jpg" srcset="images/pages/events-page/current/5-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-shown events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/8.jpg" srcset="images/pages/events-page/current/8-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/5.jpg" srcset="images/pages/events-page/current/5-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/6.jpg" srcset="images/pages/events-page/current/6-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/8.jpg" srcset="images/pages/events-page/current/8-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/3.jpg" srcset="images/pages/events-page/current/3-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/2.jpg" srcset="images/pages/events-page/current/2-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                    <div class="events__item item-hidden events__item-future"> 
+                      <div class="events__card card-general"> 
+                        <div class="card-general__label">УЖЕ ИДЕТ – 05 АВГ 2022</div>
+                        <div class="card-general__img"> <img src="images/pages/events-page/current/1.jpg" srcset="images/pages/events-page/current/1-2x.jpg" alt="alt"></div>
+                        <div class="card-general__spans"> <span>ВЫСТАВКА</span><span>ГЛАВНОЕ ЗДАНИЕ</span></div>
+                        <div class="card-general__description">Представляем произведение Юрия Алексеевича Панкова в рамках цикла </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="show-more-btn-wrapper js-hide">
+                    <div class="events-page__future-show-more show-more-btn"><span>Показать еще</span><img class="arrow-grey-bottom" src="images/icons/arrow-grey-bottom.svg" alt="alt"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="events-page__tags">
+              <section class="tags">
+                <div class="container">
+                  <div class="tags__items"> 
+                    <div class="tags__row"> 
+                      <div class="tags__item">
+                        <div class="card-tags">
+                          <div class="card-tags__column"> 
+                            <h5 class="card-tags__top"> <span># </span>Видеопоказы</h5>
+                            <div class="card-tags__bottom"><span>Описательные текст видеопоказов, интересный классный текст</span><img src="images/blocks/tags/1.svg" alt="alt"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tags__item">
+                        <div class="card-tags">
+                          <div class="card-tags__column"> 
+                            <h5 class="card-tags__top"> <span># </span>Клубы</h5>
+                            <div class="card-tags__bottom"><span>Описательные текст видеопоказов, интересный классный текст</span><img src="images/blocks/tags/2.svg" alt="alt"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tags__item">
+                        <div class="card-tags">
+                          <div class="card-tags__column"> 
+                            <h5 class="card-tags__top"> <span># </span>Интерактивное пространство</h5>
+                            <div class="card-tags__bottom"><span>Описательные текст видеопоказов, интересный классный текст</span><img src="images/blocks/tags/3.svg" alt="alt"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tags__item">
+                        <div class="card-tags">
+                          <div class="card-tags__column"> 
+                            <h5 class="card-tags__top"> <span># </span>Мастер - класс</h5>
+                            <div class="card-tags__bottom"><span>Описательные текст видеопоказов, интересный классный текст</span><img src="images/blocks/tags/4.svg" alt="alt"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tags__item">
+                        <div class="card-tags">
+                          <div class="card-tags__column"> 
+                            <h5 class="card-tags__top"> <span># </span>Просвещение</h5>
+                            <div class="card-tags__bottom"><span>Описательные текст видеопоказов, интересный классный текст</span><img src="images/blocks/tags/5.svg" alt="alt"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tags__item">
+                        <div class="card-tags">
+                          <div class="card-tags__column"> 
+                            <h5 class="card-tags__top"> <span># </span>Приложения</h5>
+                            <div class="card-tags__bottom"><span>Описательные текст видеопоказов, интересный классный текст</span><img src="images/blocks/tags/6.svg" alt="alt"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tags__item">
+                        <div class="card-tags">
+                          <div class="card-tags__column"> 
+                            <h5 class="card-tags__top"> <span># </span>Курсы</h5>
+                            <div class="card-tags__bottom"><span>Описательные текст видеопоказов, интересный классный текст</span><img src="images/blocks/tags/7.svg" alt="alt"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tags__item">
+                        <div class="card-tags">
+                          <div class="card-tags__column"> 
+                            <h5 class="card-tags__top"> <span># </span>Экскурсия</h5>
+                            <div class="card-tags__bottom"><span>Описательные текст видеопоказов, интересный классный текст</span><img src="images/blocks/tags/8.svg" alt="alt"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="show-more-btn-wrapper js-hide">
+                    <div class="tags__show-more-btn show-more-btn"><span>Смотреть все теги</span><img class="arrow-grey-bottom" src="images/icons/arrow-grey-bottom.svg" alt="alt"></div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" data-aos="fade"> 
+        <div class="container footer__container"> 
+          <div class="footer__top"> 
+            <div class="footer__row"> 
+              <div class="item-footer"> 
+                <div class="item-footer__title">ВЫСТАВКИ И СОБЫТИЯ</div>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Выставки и события</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Выставки и события</a></li>
+                </ul>
+              </div>
+              <div class="item-footer"> 
+                <div class="item-footer__title">ПОСЕТИТЕЛЯМ</div>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Спланировать визит</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Спланировать визит</a></li>
+                </ul>
+              </div>
+              <div class="item-footer"> 
+                <div class="item-footer__title">Музей</div>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">История</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">История</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Дом Ремесел</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">КВЦ Русского музея</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Контакты</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Сотрудники</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Официальные материалы</a></li>
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Противодействие коррупции</a></li>
+                </ul>
+              </div>
+              <div class="item-footer"> 
+                <div class="item-footer__title">МЕДИАЦЕНТР</div>
+                <ul class="item-footer__list">
+                  <li class="item-footer__item"> <a class="item-footer__link" href="">Медиацентр</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__middle">
+            <div class="footer__row">
+              <div class="item-footer">
+                <div class="item-footer__title">МЫ В СОЦСЕТЯХ</div>
+                <div class="item-footer__social"> <a href="">VK</a><a href="">VK</a><a href="">INSTAGRAM</a><a href="">TWITTER</a><a href="">ОДНОКЛАССНИКИ</a><a href="">YOUTUBE</a></div>
+              </div>
+              <div class="item-footer">
+                <div class="item-footer__title">КОНТАКТЫ</div>
+                <div class="item-footer__contacts">
+                  <div class="item-footer__contact"> <a href="">Главное здание:  ул. Коминтерна 13</a><a href="tel:8152450385">Тел: +7(8152)45-03-85</a><a href="mailto:info@artmmuseum.ru">E-mail: info@artmmuseum.ru</a></div>
+                  <div class="item-footer__contact"> <a href="">Дом ремесел: ул.Книповича, д.23А</a><a href="tel:8152994358">Тел: 8 (8152) 994-358</a><a href="mailto:info@artmmuseum.ru">E-mail: kvcrm@artmmuseum.ru</a></div>
+                  <div class="item-footer__contact"> <a href="">КВЦ: ул. Софьи Перовской, 3, II этаж</a><a href="tel:8152450860">Тел: (8152) 45-08-60</a><a href="mailto:info@artmmuseum.ru">E-mail: kvcrm@artmmuseum.ru</a></div>
+                </div>
+              </div>
+              <div class="item-footer item-footer__schedule-wrapper">
+                <div class="item-footer__title">ЧАСЫ РАБОТЫ</div>
+                <div class="item-footer__schedule">
+                   Ср, Чт, Пт, Сб, Вс: 11:00 - 19:00<br>Кассы закрываются за полчаса до окончания работы музея</div>
+              </div>
+              <div class="item-footer">
+                <div class="item-footer__title">ПОДПИСАТЬСЯ НА НОВОСТИ</div>
+                <div class="item-footer__news"> 
+                  <div class="item-footer__input input-white">
+                    <input type="email" placeholder="E-mail">
+                    <button type="submit"> </button>
+                  </div>
+                  <div class="item-footer__agreement agreement agreement-white">
+                    <div class="checkbox">
+                      <input class="checkbox__input" id="formAgreement" checked="" type="checkbox" name="agreement">
+                      <label class="checkbox__label" for="formAgreement">
+                        <div class="checkbox__label-arrow"><img src="images/icons/arrow-checkbox-white.svg" alt="alt"></div><span>Я согласен с политикой обработки персональных данных</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom"> 
+            <div class="footer__row"> 
+              <div class="item-footer item-footer--big">© 2012-2022 Мурманский областной художественный музей</div>
+              <div class="item-footer">Политика конфиденциальности</div>
+              <div class="item-footer">Разработано в Bofer.ru</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&amp;lang=ru_RU"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

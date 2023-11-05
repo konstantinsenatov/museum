@@ -1,0 +1,348 @@
+.filter-events {
+	&__container {
+	}
+	&__items-top {
+		margin-top: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@media (max-width: 639px){
+			flex-direction: column;
+		}
+	}
+	&__item-top, .filter-events__item-calendar {
+		margin-left: 25px;
+		position: relative;
+		padding-bottom: 15px;
+		&:first-child{
+			margin: 0;
+		}
+		@media (max-width: 639px){
+			margin: 0;
+		}
+		&.active {
+			.filter-events__item-arrow {
+				transform: rotate(180deg);
+			}
+			.filter-events__dropdown {
+				opacity: 1;
+				pointer-events: auto;
+				transform: translate(-50%, 0);
+				@media (max-width: 639px){
+					transform: translate(0, 0);
+					display: block;
+				}
+			}
+			.datepicker-inline {
+				opacity: 1;
+				pointer-events: auto;
+				transform: translate(-50%, 0);
+			}
+		}
+		.datepicker-inline {
+			transition: all 0.3s ease 0s;
+			opacity: 0;
+			pointer-events: none;
+			transform-origin: 0% 0%;
+			transform: translate(-50%, 8px);
+			border-radius: 6px;
+			position: absolute;
+			z-index: 99;
+			top: calc(100% + 0px);
+			left: 50%;
+			padding: 10px;
+		}
+	}
+	&__item-text {
+		cursor: pointer;
+		position: relative;
+		font-family: 'Ubuntu';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 18px;
+		text-transform: uppercase;
+		color: #1C1825;
+		display: flex;
+		align-items: center;
+		@media (max-width: 639px){
+			justify-content: center;
+		}
+	}
+	&__item-arrow {
+		display: inline-flex;
+		align-items: center;
+		margin-left: 6px;
+		transform: rotate(0deg);
+		pointer-events: none;
+	}
+	&__dropdown {
+		transition: all 0.3s ease 0s;
+		opacity: 0;
+		pointer-events: none;
+		transform-origin: 0% 0%;
+		transform: translate(-50%, 8px);
+		background: #F2F3F7;
+		border: 1px solid rgba(0, 0, 0, 0.07);
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+		border-radius: 6px;
+		position: absolute;
+		z-index: 99;
+		top: calc(100% + 0px);
+		left: 50%;
+		padding: 10px 0;
+		@media (max-width: 639px){
+			opacity: 1;
+			position: relative;
+			top: 0;
+			left: 0;
+			transform: translate(0, 0);
+			margin-top: 15px;
+			display: none;
+		}
+		&-item {
+			display: flex;
+			align-items: center;
+			padding: 0 10px;
+			.checkbox__label, .filter-events__dropdown-text {
+				min-height: 32px;
+				display: flex;
+				align-items: center;
+			}
+			.filter-events__dropdown-text {
+			}
+			.checkbox__label {
+				&::before {
+					transform: translate(10px, 5px);
+				}
+				.checkbox__label-arrow {
+					top: 11px;
+					left: 10px;
+				}
+			}
+
+		}
+		&-text {
+/* 			cursor: default;
+ */			position: relative;
+			margin-left: 32px;
+			margin-top: -2px;
+			font-family: 'Ubuntu';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 17px;
+			letter-spacing: -0.02em;
+			color: #1C1825;
+			white-space: nowrap;
+			pointer-events: none;
+		}
+	}
+	&__item-datepicker {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		cursor: pointer;
+	}
+
+
+	&__items-bottom {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		min-height: 13px;
+		margin-top: -5px;
+	}
+	&__selected {
+		margin-top: 5px;
+		margin-left: 15px;
+		display: flex;
+		align-items: center;
+		font-family: 'Ubuntu';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 13px;
+		letter-spacing: -0.02em;
+		text-transform: uppercase;
+		color: #636365;
+		&-remove {
+			margin-left: 5px;
+			cursor: pointer;
+			min-width: 8px;
+			min-height: 8px;
+			background: url('../images/icons/x-big.svg') 0 0 / 100% 100% no-repeat;
+		}
+	}
+}
+
+.filter-events__item-datepicker-calendar {
+	background: #F2F3F7!important;
+	border: 1px solid rgba(0, 0, 0, 0.07)!important;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15)!important;
+	border-radius: 6px!important;
+	padding: 10px 10px 60px!important;
+	&.active {
+
+	}
+	.datepicker--pointer {
+		cursor: pointer;
+		position: absolute;
+		top: auto;
+		left: 22px;
+		right: auto;
+		bottom: 18px;
+		width: calc(100% - 44px);
+		min-width: calc(100% - 44px);
+		min-height: 22px;
+		background: transparent;
+		border: none;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		height: auto;
+		z-index: -1;
+		transform: rotate(0);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 6px;
+		&::before{
+			content:'Применить';
+			font-family: 'Ubuntu';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 16px;
+			color: #474747;
+		}
+		&::after{
+			content:'';
+			margin-left: 8px;
+			width: 6.71px;
+			height: 8.75px;
+			background: url('../images/icons/arrow-grey-bottom.svg') 0 0 / 100% 100% no-repeat;
+		}
+	}
+	.datepicker--nav {
+		justify-content: center;
+		.datepicker--nav-action {
+			&:hover{
+				background-color: transparent;
+				svg {
+					path {
+						stroke: #000000;
+					}
+				}
+			}
+		}
+		.datepicker--nav-title {
+			font-family: 'Noto Serif';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 31px;
+			display: flex;
+			align-items: center;
+			text-align: center;
+			color: #636365;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.datepicker--content {
+		padding: 0;
+		.datepicker--days {
+			.datepicker--days-names {
+				margin: 13px 0 18px;
+				.datepicker--day-name {
+					font-family: 'Ubuntu';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 11px;
+					line-height: 13px;
+					display: flex;
+					align-items: center;
+					text-align: center;
+					letter-spacing: -0.02em;
+					color: #636365;
+				}
+			}
+			.datepicker--cells {
+				.datepicker--cell {
+					margin-top: 9px;
+					font-family: 'Ubuntu';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 16px;
+					display: flex;
+					align-items: center;
+					text-align: center;
+					color: #1C1825;
+					padding: 8px 12px;
+					&.other-month {
+
+					}
+					&.-current- {
+						text-decoration: underline;
+						border: none;
+					}
+					&.datepicker--cell.-range-from- {
+						border: none;
+						background: rgba(0, 0, 0, 0.1);
+						border-radius: 50% 0 0 50%;
+					}
+					&.datepicker--cell.-range-to- {
+						border: none;
+						background: rgba(0, 0, 0, 0.1);
+						border-radius: 0 50% 50% 0;
+					}
+					&.-in-range- {
+						background: rgba(0, 0, 0, 0.1);
+						border-radius: 0;
+					}
+					&:hover{
+						background: rgba(0, 0, 0, 0.1);
+						border-radius: 50%;
+					}
+				}
+			}
+		}
+	}
+}
+.events-page__constant {
+	overflow: hidden;
+	.events {
+		margin-top: 22px;
+		.events-page__constant-row {
+			display: flex;
+			.events-page__constant-item {
+				width: 25%;
+			}
+		}
+	}
+}
+
+
+.events-page__tags {
+
+}
+.events-page {
+	.filter-events__dropdown-item {
+		position: relative;
+		.checkbox {
+			min-width: 100%;
+			min-height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			.checkbox__label {
+				min-width: 100%;
+			}
+		}
+	}
+}

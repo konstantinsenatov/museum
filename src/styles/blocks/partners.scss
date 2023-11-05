@@ -1,0 +1,119 @@
+.partners {
+	div.partners__items {
+		margin: -5px;
+		margin-top: 35px;
+		div.partners__item {
+			@media (max-width: 639px){
+				width: 100%;
+				display: none;
+				&:nth-child(1){
+					display: block;
+				}
+			}
+		}
+	}
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__item {
+		overflow: hidden;
+		width: 25%;
+		height: auto;
+		padding: 5px;
+		position: relative;
+		display: none;
+		&:nth-child(1), 
+		&:nth-child(2), 
+		&:nth-child(3), 
+		&:nth-child(4){
+			display: block;
+		}
+
+
+		&-hover {
+			transition: all 0.7s ease 0s;
+			opacity: 0;
+			pointer-events: none;
+			transform: translate(0, -100%);
+			padding: 25px 30px 25px 15px;
+			position: absolute;
+			z-index: 9;
+			top: 50%;
+			left: 5px;
+			width: calc(100% - 10px);
+			min-height: calc(100% - 10px);
+			max-height: calc(100% - 10px);
+			overflow: auto;
+			background: #F0F1F5;
+			border-radius: 10px;
+			font-family: 'Ubuntu';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 130%;
+			letter-spacing: -0.02em;
+			color: #000000;
+			a {
+				color: #00A3FF;
+			}
+			&::-webkit-scrollbar {
+				width: 4px;
+			}
+			&::-webkit-scrollbar-thumb {
+				background-color: #1C1825;
+				border-radius: 2px;
+			}
+		}
+		&:hover{
+			.partners__item-hover {
+				opacity: 1;
+				pointer-events: auto;
+				transform: translate(0, -50%);
+			}
+		}
+	}
+
+	div.partners__item {
+
+		@media (max-width: 992px){
+			width: 50%;
+			display: none;
+			&:nth-child(1), 
+			&:nth-child(2){
+				display: block;
+			}
+		}
+	}
+
+	/* &__item:nth-last-child(1):nth-child(3n-2) {
+		width: 100%;
+	}
+	&__item:nth-last-child(1):nth-child(3n-1),
+	&__item:nth-last-child(2):nth-child(3n-2) {
+		width: 50%;
+	}
+	&__item:nth-last-child(1):nth-child(4n-3) {
+		width: 25%;
+	} */
+	&__card {
+		min-height: 100%;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #F0F1F5;
+		border-radius: 10px;
+		height: 211px;
+		@media (max-width: 992px){
+			height: 188px;
+		}
+		@media (max-width: 639px){
+			height: 175px;
+		}
+		img {
+			max-width: 100%;
+			max-height: 100%;
+		}
+	} 
+}
